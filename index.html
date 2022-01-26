@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc</title>
+    <link rel="icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="app/css/style.css" />
+  </head>
+  <body class="theme-1">
+    <main>
+      <nav>
+        <ul>
+          <div class="nav-logo">
+            <li>Calc</li>
+          </div>
+          <div class="nav-theme">
+            <li>
+              <div>
+                <span> Theme </span>
+              </div>
+              <div class="upwrap">
+                <div class="theme-toggle">
+                  <label class="custom-radio-button">
+                    <div class="label_text">1</div>
+                    <input
+                      id="first"
+                      name="toggle-state"
+                      type="radio"
+                      checked
+                      class="radio-button"
+                      value="theme-1"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="custom-radio-button">
+                    <div class="label_text">2</div>
+                    <input
+                      id="second"
+                      name="toggle-state"
+                      type="radio"
+                      class="radio-button"
+                      value="theme-2"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="custom-radio-button">
+                    <div class="label_text">3</div>
+                    <input
+                      id="third"
+                      name="toggle-state"
+                      type="radio"
+                      class="radio-button"
+                      value="theme-3"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <section class="grid-1">
+        <input type="text" id="input" />
+        <div class="numbers">
+          <button>7</button><button>8</button><button>9</button
+          ><button class="extra-button">Del</button><button>4</button
+          ><button>5</button><button>6</button><button>+</button
+          ><button>1</button><button>2</button><button>3</button
+          ><button>-</button><button>.</button><button>0</button
+          ><button>/</button><button>*</button
+          ><button class="reset extra-button">Reset</button
+          ><button class="equal">=</button>
+        </div>
+      </section>
+    </main>
+    <script src="app/js/app.js"></script>
+  </body>
+</html>

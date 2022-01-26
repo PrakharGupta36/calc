@@ -1,0 +1,56 @@
+.theme-1 {
+  background-color: var(--background-color-theme-1);
+  color: var(--color-theme-1);
+}
+
+.theme-2 {
+  background-color: var(--background-color-theme-2);
+  color: var(--color-theme-2);
+}
+
+.theme-3 {
+  background-color: var(--background-color-theme-3);
+  color: var(--color-theme-3);
+}
+
+.theme-1 #input {
+  background-color: var(--main-input-theme-1);
+  color: var(--color-theme-1);
+  border: var(--border-theme-1);
+}
+
+.theme-2 #input {
+  background-color: var(--main-input-theme-2);
+  color: var(--color-theme-2);
+  border: var(--border-theme-2);
+}
+
+.theme-3 #input {
+  background-color: var(--main-input-theme-3);
+  color: var(--color-theme-3);
+  border: var(--border-theme-1);
+}
+
+.theme-1 .extra-button {
+  background-color: var(--extra-button-theme-1);
+}
+
+.theme-2 .extra-button {
+  background-color: var(--extra-button-theme-2);
+}
+
+.theme-3 .extra-button {
+  background-color: var(--extra-button-theme-3);
+}
+
+.theme-1 .equal {
+  background-color: var(--equal-button-theme-1);
+}
+
+.theme-2 .equal {
+  background-color: var(--equal-button-theme-2);
+}
+
+.theme-3 .equal {
+  background-color: var(--equal-button-theme-3);
+}

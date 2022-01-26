@@ -1,0 +1,116 @@
+input[type="radio"] {
+  background-color: aqua;
+}
+
+/* CSS */
+.numbers button {
+  align-items: center;
+  appearance: none;
+  color: #414550;
+  /* font-weight: bold; */
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.numbers button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.numbers button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.numbers button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.upwrap {
+  display: inline-flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: auto;
+}
+
+.custom-radio-button {
+  width: 20px;
+  height: 20px;
+  /*border: 2px solid #444;
+   border-radius: 50%;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio-button input {
+  display: none;
+}
+
+.custom-radio-button .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: gray;
+  border-radius: 50%;
+  /* display: inline-block; */
+  /*opacity: 0;*/
+  transition: opacity 0.3s ease;
+  opacity: 0.3;
+}
+
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  /* display: inline-block; */
+  z-index: 2;
+  background-color: rgb(228, 83, 16);
+}
+
+.custom-radio-button input:not(:checked) + .checkmark:hover {
+  background-color: rgb(228, 83, 16);
+}
+
+label .label_text {
+  position: relative;
+  bottom: 20px ;
+  display: none;
+}
+
+.period_text {
+  text-align: center;
+}
