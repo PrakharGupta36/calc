@@ -79,15 +79,15 @@ nav ul {
 }
 
 #input {
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
-  width: 100%;
-
+  width: 75%;
   text-align: right;
   font-weight: bolder;
   transition: all 500ms;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
 
 .numbers {
   display: grid;
