@@ -7,61 +7,86 @@
     <title>Calc</title>
     <link rel="icon" href="assets/icon.svg" />
     <link rel="stylesheet" href="app/css/style.css" />
+    <meta name="title" content="Calc" />
+    <meta
+      name="description"
+      content="Just a friendly neighborhood calculator"
+    />
+    <meta name="keywords" content="calculator,math" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="Prakhar Gupta" />
+    <meta name="twitter:card" content="summmary" />
+    <meta name="twitter:site" content="@prakhar_gupta369" />
+    <meta
+      name="twitter:description"
+      content="Just a friendly neighborhood calculator"
+    />
+    <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
+    <meta name="twitter:image" content="./assets/img.png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#3b4664" />
   </head>
   <body class="theme-1">
     <main>
       <nav>
         <ul>
-          <div class="nav-logo">
-            <li>Calc</li>
-          </div>
-          <div class="nav-theme">
-            <li>
-              <div>
-                <span> Theme </span>
-              </div>
-              <div class="upwrap">
-                <div class="theme-toggle">
-                  <label class="custom-radio-button">
-                    <div class="label_text">1</div>
-                    <input
-                      id="first"
-                      name="toggle-state"
-                      type="radio"
-                      checked
-                      class="radio-button"
-                      value="theme-1"
-                    />
-                    <span class="checkmark"></span>
-                  </label>
+          <li>
+            <div class="nav-logo">
+              <span>Calc</span>
+            </div>
+          </li>
+          <li>
+            <div class="nav-theme">
+              <div class="nav-theme-inner">
+                <div>
+                  <span> Theme </span>
+                </div>
+                <div class="upwrap">
+                  <div class="theme-toggle">
+                    <label class="custom-radio-button">
+                      <div class="label_text">1</div>
+                      <input
+                        id="first"
+                        name="toggle-state"
+                        type="radio"
+                        checked
+                        class="radio-button"
+                        value="theme-1"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
 
-                  <label class="custom-radio-button">
-                    <div class="label_text">2</div>
-                    <input
-                      id="second"
-                      name="toggle-state"
-                      type="radio"
-                      class="radio-button"
-                      value="theme-2"
-                    />
-                    <span class="checkmark"></span>
-                  </label>
+                    <label class="custom-radio-button">
+                      <div class="label_text">2</div>
+                      <input
+                        id="second"
+                        name="toggle-state"
+                        type="radio"
+                        class="radio-button"
+                        value="theme-2"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
 
-                  <label class="custom-radio-button">
-                    <div class="label_text">3</div>
-                    <input
-                      id="third"
-                      name="toggle-state"
-                      type="radio"
-                      class="radio-button"
-                      value="theme-3"
-                    />
-                    <span class="checkmark"></span>
-                  </label>
+                    <label class="custom-radio-button">
+                      <div class="label_text">3</div>
+                      <input
+                        id="third"
+                        name="toggle-state"
+                        type="radio"
+                        class="radio-button"
+                        value="theme-3"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
       </nav>
       <section class="grid-1">
@@ -89,5 +114,10 @@
       </section>
     </main>
     <script src="app/js/app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./service-worker.js");
+      }
+    </script>
   </body>
 </html>

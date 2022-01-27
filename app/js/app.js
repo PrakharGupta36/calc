@@ -28,7 +28,6 @@ function main() {
 
   deleteButton.onclick = () => {
     let inputValue = input.value.slice(0, -1);
-    // inputValue = inputValue.slice(0, -1);
     input.value = inputValue;
   };
 
@@ -38,22 +37,21 @@ function main() {
 
   opertors.forEach((e) => {
     e.addEventListener("click", () => {
-      let lastchar = input.value[input.value.length - 1];
-      if (
-        input.value.length > 0 &&
-        (lastchar !== "+" ||
-          lastchar !== "-" ||
-          lastchar !== "*" ||
-          lastchar !== "/")
-      ) {
+      if (input.value.length > 0) {
         input.value += e.value;
       }
     });
   });
 
   equal.onclick = () => {
-    input.value = eval(input.value);
-    console.log(input.value[input.value.length - 1]);
+    try {
+      input.value = eval(input.value);
+    } catch (error) {
+      if (error instanceof SyntaxError) {
+        input.value = "";
+        alert("Cannot evaluate");
+      }
+    }
   };
 }
 

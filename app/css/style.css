@@ -42,6 +42,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 1.5rem;
 }
 
 nav ul {
@@ -58,7 +59,7 @@ nav ul {
   font-weight: bold;
 }
 
-.nav-theme li {
+.nav-theme .nav-theme-inner {
   display: flex;
   align-items: center;
   gap: 1rem;
